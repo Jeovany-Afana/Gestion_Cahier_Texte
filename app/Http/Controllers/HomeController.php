@@ -17,6 +17,49 @@ class HomeController extends Controller
         return view('index', compact('name'));
     }
 
+    public function login()
+    {
+      return view('login');
+    }
+
+/**
+*
+
+ * @return void
+ */
+    public function inscription_responsable()
+    {
+      return view('inscription_responsable');
+    }
+
+/**
+ * @return void
+ */
+    public function liste_responsables()
+    {
+      return view('liste_responsables_classe');
+    }
+
+    public function inscription_prof()
+    {
+      return view('inscription_prof');
+    }
+
+    public function liste_prof()
+    {
+      return view('liste_prof');
+    }
+
+    public function profile_responsable()
+    {
+      return view('profile_responsable');
+    }
+
+    public function profile_prof()
+    {
+      return view('profile_prof');
+    }
+
     /**
      * Store a newly created resource in storage.
      *

@@ -19,3 +19,10 @@ Route::get('/', function () {
 });
 
 Route::get('/index',[HomeController::class, 'index']);
+Route::get('/inscription_prof', [HomeController::class, 'inscription_prof'])->name('inscription_prof')->name('inscription_prof');
+Route::get('/login', [HomeController::class, 'login'])->name('login');
+Route::post('/liste_prof', [HomeController::class,'register_prof'])->name('liste_prof');
+Route::get('/liste_responsables_classe', [HomeController::class, 'liste_responsables'])->name('liste_responsables');
+Route::get('/inscription_responsable', [HomeController::class, 'inscription_responsable'])->name('inscription_responsable');
+Route::get('/profile_responsable', [HomeController::class, 'profile_responsable']);
+Route::get('/profile_prof', [HomeController::class, 'profile_prof'])->name('profile_prof');
